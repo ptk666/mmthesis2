@@ -27,6 +27,7 @@ class BookingTable extends Migration
             $table->string('maxpax');
             $table->string('venue');
 
+            $table->tinyInteger('is_booked')->default(0); 
             $table->tinyInteger('is_cancelled')->default(0);    
 
             $table->timestamps();
