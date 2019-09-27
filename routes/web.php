@@ -15,3 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('test', 'booking@hello');
+
+
+
+Route::get('/signup', 'mainController@signup');
+
+Route::get('/login', 'mainController@login');
+
+Route::get('/user', 'mainController@user');
